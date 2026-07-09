@@ -74,7 +74,7 @@ export function Layout() {
               </div>
               <div>
                 <h1 className="font-semibold text-sm">Taller Tomalino</h1>
-                <p className="text-xs text-muted-foreground">gestion.net</p>
+                <p className="text-xs text-muted-foreground">Taller Simple</p>
               </div>
             </div>
             <Button

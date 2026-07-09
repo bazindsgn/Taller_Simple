@@ -42,7 +42,7 @@ export function Login() {
               <Wrench className="size-8 text-white" />
             </div>
           </div>
-          <CardTitle className="text-2xl">Gestión.net</CardTitle>
+          <CardTitle className="text-2xl">Taller Simple</CardTitle>
           <CardDescription>
             Ingresá tus credenciales para acceder
           </CardDescription>
