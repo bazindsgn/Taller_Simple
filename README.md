@@ -1,7 +1,7 @@
 
-  # gestion.net_new
+  # Taller Simple
 
-  This is a code bundle for gestion.net_new. The original project is available at https://www.figma.com/design/vFNd7Qb7OLTcCjXEv81Nfm/gestion.net_new.
+  This is a code bundle for Taller Simple. The original project is available at https://www.figma.com/design/vFNd7Qb7OLTcCjXEv81Nfm/Taller-Simple.
 
   ## Running the code
 
