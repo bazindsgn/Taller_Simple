@@ -14,11 +14,10 @@ class Settings(BaseSettings):
     debug: bool = True
     api_prefix: str = "/api/v1"
 
-    # Database — ej: postgresql+psycopg://user:pass@localhost:5432/taller_simple
-    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5432/taller_simple"
+    database_url: str
 
     # Auth (reservado para feature auth)
-    secret_key: str = "change-me-in-env"
+    secret_key: str
     access_token_expire_minutes: int = 60
     algorithm: str = "HS256"
 
