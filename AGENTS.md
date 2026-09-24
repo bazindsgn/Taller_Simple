@@ -104,10 +104,10 @@ Si no hay 2 de 3 claros, no abstraer. Si la decisión es relevante y no está aq
 
 ## Integraciones externas
 
-- Viven en `app/integrations/<servicio>/` (ej: `app/integrations/afip/`, `app/integrations/google_calendar/`).
+- Viven en `app/integrations/<servicio>/` (ej: `app/integrations/arca/`, `app/integrations/google_calendar/`).
 - Exponen cliente/funciones puras. No conocen routers.
 - Inyectar cliente vía `Depends` para poder mockear en tests.
-- AFIP/ARCA/WSFE/CAE debe quedar encapsulado en `app/integrations/afip/` — routers/services solo llaman `afip_client.emitir(...)`. Facilita reemplazo/mock por taller.
+- ARCA/WSFE debe quedar encapsulado en `app/integrations/arca/` — routers/services solo llaman `arca_client.emitir(...)`. Facilita reemplazo/mock por taller.
 
 ## Seguridad (mínimos no negociables)
 
@@ -120,7 +120,7 @@ Si no hay 2 de 3 claros, no abstraer. Si la decisión es relevante y no está aq
 ## Convenciones
 
 - Python 3.12+, `ruff` + `black` (o `ruff format`) si se agrega lint.
-- Commits en español o inglés consistente, sin secretos.
+- Commits en español consistente, sin secretos.
 - No reescribir archivos completos para cambios puntuales. No tocar código no relacionado a la tarea.
 - Antes de cambio grande: analizar estructura, listar archivos afectados, implementar localizado, correr `pytest`, verificar `AGENTS.md`.
 
