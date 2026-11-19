@@ -2,6 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
+from app.customers.model import Customer  # noqa: F401
+from app.vehicles.model import CustomerVehicle, Vehicle  # noqa: F401
+from app.workshops.model import Workshop  # noqa: F401
 
 app = FastAPI(
     title=settings.app_name,

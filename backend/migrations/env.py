@@ -10,7 +10,10 @@ from alembic import context
 from sqlalchemy import engine_from_config, pool
 
 from app.config import settings
+from app.customers.model import Customer  # noqa: F401
 from app.database import Base
+from app.vehicles.model import CustomerVehicle, Vehicle  # noqa: F401
+from app.workshops.model import Workshop  # noqa: F401
 
 # Importar modelos aquí cuando existan para que autogenerate los detecte, ej:
 # from app.clients.model import Client  # noqa: F401
